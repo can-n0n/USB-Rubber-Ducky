@@ -1,1 +1,50 @@
+REM Change background to uploaded url using google chrome
 
+
+
+DELAY 500
+REM Open the default web browser
+GUI r
+DELAY 500
+STRING chrome
+ENTER
+DELAY 1500
+
+REM Navigate to the image URL
+STRING https://mrwallpaper.com/images/hd/handsome-squidward-tentacles-clouds-sdq32vkff6n1wec6.jpg
+ENTER
+DELAY 200
+
+
+REM Save the image
+CTRL s
+DELAY 500
+STRING C:\Users\Public\Downloads\handsome-squidward-tentacles-clouds-sdq32vkff6n1wec6.jpg
+ENTER
+DELAY 500
+CTRL w
+DELAY 250
+
+GUI r
+DELAY 500
+STRING C:\Users\Public\Downloads\handsome-squidward-tentacles-clouds-sdq32vkff6n1wec6.jpg
+DELAY 500
+ENTER
+DELAY 2000
+CTRL b
+DELAY 2000
+CTRL w
+
+DELAY 500
+GUI r
+DELAY 100
+STRING powershell
+DELAY 100
+ENTER
+DELAY 500
+STRING Remove-item C:\Users\Public\Downloads\handsome-squidward-tentacles-clouds-sdq32vkff6n1wec6.jpg
+DELAY 500
+ENTER
+DELAY 1000
+STRING exit
+ENTER
