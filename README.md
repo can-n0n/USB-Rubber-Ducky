@@ -1,6 +1,6 @@
-**README: Educational Use Only**
-
 All files in this repository are my own work and should be used for educational purposes only.
+
+Make sure to change the file path to the desired path
 
 Usage of these files for educational purposes is encouraged, such as:
 
